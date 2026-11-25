@@ -4,7 +4,7 @@ const CONFIG = {
   // Registration is POSTed as JSON to your backend. Keep the Telegram bot token ONLY on the server
   // (backend calls https://api.telegram.org/bot<TOKEN>/sendMessage). Leave empty for demo mode.
   endpoint: "",
-  phones: ["+998 00 000 00 00", "+998 00 000 00 01"], // placeholders — replace with real numbers
+  phones: ["+998 50 582 82 24", "+998 90 762 22 22"], // placeholders — replace with real numbers
   address: "Andijon shahri, Lenskiy ko'chasi, 143-uy",
   social: { instagram: "https://instagram.com/", facebook: "https://facebook.com/", telegram: "https://t.me/", youtube: "https://youtube.com/" }
 };
@@ -39,9 +39,9 @@ const I = {
 
 /* Courses: icon, category, names, descriptions, months, technologies, projects */
 const COURSES = [
-  ["📺", "a", "Robototexnika|Робототехника|Robotics", "Arduino, sensorlar va robotlar yaratish|Создание роботов на Arduino и датчиках|Build robots with Arduino and sensors", 8, "Arduino,Sensors,Motors,C++", "Line-follower robot,Robot assembly,Smart home devices,Robot arm"],
+  ["🎡", "a", "Robototexnika|Робототехника|Robotics", "Arduino, sensorlar va robotlar yaratish|Создание роботов на Arduino и датчиках|Build robots with Arduino and sensors", 8, "Arduino,Sensors,Motors,C++", "Line-follower robot,Robot assembly,Smart home devices,Robot arm"],
   ["💻", "c", "Dasturlash|Программирование|Programming", "Dasturlash mantig'i va algoritmlar asoslari|Основы логики и алгоритмов|Core logic and algorithms", 6, "Algorithms,Scratch,C++", "Calculator,Quiz game,Mini apps"],
-  ["🧠", "c", "Informatika|Информатика|Computer Science", "Kompyuter savodxonligi va ofis dasturlari|Компьютерная грамотность и офисные программы|Digital literacy and office tools", 4, "Windows,Office,Internet", "Presentations,Spreadsheets,Documents"],
+  ["🔖", "c", "Informatika|Информатика|Computer Science", "Kompyuter savodxonligi va ofis dasturlari|Компьютерная грамотность и офисные программы|Digital literacy and office tools", 4, "Windows,Office,Internet", "Presentations,Spreadsheets,Documents"],
   ["✨", "a", "Sun'iy intellekt (AI)|Искусственный интеллект (ИИ)|Artificial Intelligence (AI)", "ChatGPT, Machine Learning va neyron tarmoqlar|ChatGPT, машинное обучение и нейросети|ChatGPT, machine learning and neural networks", 8, "ChatGPT,Machine Learning,Neural Networks,Python", "AI chatbot,AI image generation,Real AI projects"],
   ["🌐", "c", "Web dasturlash|Веб-программирование|Web Development", "Saytlarni noldan yaratish|Создание сайтов с нуля|Build websites from scratch", 6, "HTML,CSS,JavaScript", "Portfolio,Landing page,Online shop"],
   ["🐍", "c", "Python|Python|Python", "Python asoslari, funksiyalar, Telegram botlar|Основы Python, функции, Telegram-боты|Python basics, functions, Telegram bots", 6, "Variables,Functions,Algorithms,aiogram", "Telegram bots,AI projects,Games"],
@@ -57,7 +57,7 @@ const COURSES = [
 /* Optional: add a photo URL as 8th item of a course row, e.g. COURSES[0][7] = "images/robotics.jpg" */
 
 const SLIDES = [
-  ["🤖", "Robototexnika|Робототехника|Robotics", "Robotlarni o'zingiz yig'ing|Соберите робота сами|Build your own robot"],
+  ["🎡", "Robototexnika|Робототехника|Robotics", "Robotlarni o'zingiz yig'ing|Соберите робота сами|Build your own robot"],
   ["💻", "Dasturlash|Программирование|Programming", "Kod yozishni boshlang|Начните писать код|Start writing code"],
   ["✨", "Sun'iy intellekt|Искусственный интеллект|Artificial Intelligence", "AI bilan kelajakni yarating|Создавайте будущее с ИИ|Create the future with AI"],
   ["🏆", "O'quvchilar loyihalari|Проекты учеников|Student projects", "Botlar, saytlar va robotlar|Боты, сайты и роботы|Bots, websites and robots"],
