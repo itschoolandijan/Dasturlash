@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>META IT SCHOOL — Andijon IT akademiyasi</title>
+<meta name="description" content="META IT SCHOOL — Andijondagi IT ta'lim markazi: robototexnika, dasturlash, sun'iy intellekt, web, Python, dizayn va boshqa kurslar.">
+<meta name="keywords" content="IT school, Andijon, robototexnika, dasturlash, Python, AI, web dasturlash">
+<meta property="og:title" content="META IT SCHOOL">
+<meta property="og:description" content="Kelajak kasblarini bugundan o'rganing.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader" aria-hidden="true"><div class="ring"></div><b class="gt">META IT SCHOOL</b></div>
+<div id="bar"></div>
+
+<header id="nav">
+  <div class="wrap">
+    <a class="logo" href="#home" aria-label="META IT SCHOOL">META<span>IT</span>SCHOOL</a>
+    <nav id="menu" aria-label="Main">
+      <a href="#home" data-i18n="n1"></a>
+      <a href="#about" data-i18n="n2"></a>
+      <a href="#courses" data-i18n="n3"></a>
+      <a href="#projects" data-i18n="n5"></a>
+      <a href="#contact" data-i18n="n7"></a>
+    </nav>
+    <div class="tools">
+      <select id="lang" aria-label="Language"><option value="uz">UZ</option><option value="ru">RU</option><option value="en">EN</option></select>
+      <button id="theme" class="ib" aria-label="Dark / Light">🌙</button>
+      <a class="btn sm" href="#register" data-i18n="reg"></a>
+      <button id="burger" class="ib" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="wrap hg">
+    <div class="rv">
+      <h1 class="gt" data-i18n="h1"></h1>
+      <p class="sub" data-i18n="hs"></p>
+      <div class="btns"><a class="btn" href="#courses" data-i18n="b1"></a><a class="btn o" href="#contact" data-i18n="b2"></a></div>
+    </div>
+    <div class="vis" aria-hidden="true">
+      <div class="core" data-d="12">💻</div>
+      <span class="chip c1" data-d="30">&lt;/&gt;</span><span class="chip c2" data-d="-24">AI</span>
+      <span class="chip c3" data-d="20">⚡</span><span class="chip c4" data-d="-34">🐍</span>
+    </div>
+  </div>
+</section>
+
+<section id="courses">
+  <div class="wrap">
+    <h2 data-i18n="ct"></h2>
+    <div class="filters">
+      <input id="search" type="search" data-ph="sp" aria-label="Search">
+      <div id="chips"></div>
+    </div>
+    <div id="grid" class="grid"></div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2 data-i18n="pt"></h2>
+    <div id="car" class="car" aria-roledescription="carousel">
+      <div id="slides"></div>
+      <button class="nv l" id="prev" aria-label="Previous">‹</button>
+      <button class="nv r" id="next" aria-label="Next">›</button>
+      <div id="dots" class="dots"></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2 data-i18n="at"></h2>
+    <p class="lead rv" data-i18n="ab"></p>
+    <div class="stats">
+      <div class="stat rv"><b data-n="1200">0</b><span data-i18n="a1"></span></div>
+      <div class="stat rv"><b id="nc" data-n="14">0</b><span data-i18n="a2"></span></div>
+      <div class="stat rv"><b data-n="25">0</b><span data-i18n="a3"></span></div>
+      <div class="stat rv"><b data-n="300">0</b><span data-i18n="a4"></span></div>
+    </div>
+  </div>
+</section>
+
+<section id="register">
+  <div class="wrap narrow">
+    <h2 data-i18n="rt"></h2>
+    <form id="form" class="glass" novalidate>
+      <label><span data-i18n="fn"></span><input name="name" autocomplete="name"><small data-err="name"></small></label>
+      <label><span data-i18n="fp"></span><input name="phone" type="tel" placeholder="+998 90 123 45 67" autocomplete="tel"><small data-err="phone"></small></label>
+      <label><span data-i18n="fg"></span><input name="age" type="number" min="5" max="99"><small data-err="age"></small></label>
+      <label><span data-i18n="fk"></span><select name="course" id="csel"></select><small data-err="course"></small></label>
+      <label class="full"><span data-i18n="fm"></span><textarea name="comment" rows="3"></textarea></label>
+      <button class="btn full" type="submit" data-i18n="sb"></button>
+    </form>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2 data-i18n="cn"></h2>
+    <div class="cgrid">
+      <div class="glass"><h3 data-i18n="ad"></h3><p id="addr"></p></div>
+      <div class="glass"><h3 data-i18n="tel"></h3><p><a id="tel1"></a></p><p><a id="tel2"></a></p></div>
+      <div class="glass socs">
+        <a data-soc="instagram" target="_blank" rel="noopener">📸 Instagram</a>
+        <a data-soc="facebook" target="_blank" rel="noopener">📘 Facebook</a>
+        <a data-soc="telegram" target="_blank" rel="noopener">✈️ Telegram</a>
+        <a data-soc="youtube" target="_blank" rel="noopener">▶️ YouTube</a>
+      </div>
+    </div>
+    <div class="map glass">
+      <iframe id="map" title="Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <p class="ctr"><a id="dir" class="btn" target="_blank" rel="noopener" data-i18n="dir"></a></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap fg">
+    <div><a class="logo" href="#home">META<span>IT</span>SCHOOL</a><p id="faddr"></p><p><a id="ftel"></a></p></div>
+    <div><h4 data-i18n="fs"></h4><a href="#home" data-i18n="n1"></a><a href="#about" data-i18n="n2"></a><a href="#courses" data-i18n="n3"></a><a href="#projects" data-i18n="n5"></a><a href="#contact" data-i18n="n7"></a></div>
+    <div><h4 data-i18n="n3"></h4><div id="fcourses"></div></div>
+    <div class="socs"><a data-soc="instagram" target="_blank" rel="noopener">📸 Instagram</a><a data-soc="facebook" target="_blank" rel="noopener">📘 Facebook</a><a data-soc="telegram" target="_blank" rel="noopener">✈️ Telegram</a><a data-soc="youtube" target="_blank" rel="noopener">▶️ YouTube</a></div>
+  </div>
+  <p class="copy">© <span id="yr"></span> META IT SCHOOL. <span data-i18n="rights"></span></p>
+</footer>
+
+<div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="mt"><div class="mbox glass" id="mbox"></div></div>
+<button id="top" class="ib" aria-label="Back to top">↑</button>
+<div id="toasts" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
